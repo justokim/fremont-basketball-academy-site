@@ -50,7 +50,7 @@ export default function Home() {
           <div className="grid grid-cols-3 text-center  font-semibold">
             <div className="col-span-1 text-2xl  ">
               <div className="rounded-full shadow-xl bg-stone-50 w-1/2 mx-auto p-2">
-                Committed headluess ui menu
+                Committed 
               </div>
             </div>
             <div className="col-span-1 text-2xl">
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" py-8 mt-10 bg-stone-50 ">
+        <div className=" py-8 mt-10 ">
           <h1 className="text-center  tracking-tight text-6xl pb-6 font-medium font-barlow-200  uppercase  ">
             Meet the Team
           </h1>
@@ -79,10 +79,10 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
-                  src="/../public/Vish-1.jpg"
+                  src="/../public/vish.PNG"
                   alt="coach"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
@@ -99,11 +99,11 @@ export default function Home() {
                   src="/../public/Vish-1.jpg"
                   alt="coach"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
-                <p>Founder</p>
+                <p>Teacher</p>
                 <p>Experience: MSJHS Varisity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
@@ -113,10 +113,10 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto ">
                 <Image
                   className=""
-                  src="/../public/Vish-1.jpg"
+                  src="/../public/tej.jpg"
                   alt="coach"
                   layout="fill"
-                  objectFit="cover"
+                  objectFit="contain"
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
@@ -138,11 +138,7 @@ export default function Home() {
                 <div className="text-4xl font-medium font-barlow">
                   Dribbling
                 </div>
-                <ul className="list-disc">
-                  <li>Dribbling</li>
-                  <li>Shooting</li>
-                  <li>Finishing</li>
-                </ul>
+               
               </div>
               <div className=" text-center col-span-1">
                 <div className="text-4xl font-medium font-barlow">Shooting</div>
@@ -156,7 +152,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" relative  h-99 bg-stone-100">
+        <div className=" relative  h-99 ">
           <Image
             src="/../public/Vish-6.jpg"
             layout="fill"
@@ -179,11 +175,9 @@ export default function Home() {
             <div className="grid grid-cols-4 ">
               <div className="cols-span-1 flex flex-col items-center justify-center">
                 <div className="text-center w-2/3 mx-auto">
-                  ya my child is 4'5 and through this program he is going to the
-                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
-                  ME
+                  Vishrant and Dillon have put together a great initiative to coach kids in basektball. They have been consisitent, organized, flexible, open to feedback, and have kept the sport fun for our 9 year old. Highly reccomend them for a grass-roots approach to learning the nuances of basketball in a small group.
                 </div>
-                <div className="py-4"> -Parent Name</div>
+                <div className="py-4"> -Nandini V</div>
               </div>
               <div className="cols-span-1 flex flex-col items-center justify-center">
                 <div className="text-center w-2/3 mx-auto">
