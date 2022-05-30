@@ -1,5 +1,7 @@
 import Head from "next/head";
+import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -10,39 +12,219 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-6 lg:px-8 max-w-screen-xl mx-auto">
-        <div className="bg-red-100 h-96">picture</div>
-
-        <div className="bg-red-200 py-8">
-          <h1 className="text-center text-4xl pb-6">Meet the Coaches</h1>
-
-          <div className="lg:grid grid-cols-2">
-            <div className="col-span-1 bg-red-400">
-              <h1 className="text-center">picture</h1>
-              <div className="py-4">
-                <p>Coaches can suck myjsildfjal;sdjflkadsjfasdl;kfasjd</p>
+      <main className=" mx-auto  ">
+        <div className="bg-black">
+          <video
+            autoPlay={true}
+            muted
+            controls
+            playsInline
+            loop
+            className=" mx-auto w-11/12 h-100 pointer-events-none   object-cover  "
+          >
+            <source src="/basketball.mp4" type="video/mp4" />
+          </video>
+        </div>
+        {/* <div className=" py-16">
+          <h1 className="text-center text-4xl pb-6 ">Class Details</h1>
+          <div className="grid grid-cols-3">
+            <div className="col-span-1">
+              <div className="text-3xl">Age Requirements</div>
+              <ul className="pl-4 ">
+                <li>hi</li>
+                <li>POTENT</li>
+              </ul>
+            </div>
+            <div className="col-span-1">
+              <div className="text-3xl"></div>
+            </div>
+            <div className="col-span-1">
+              <div className="text-3xl">Age Requirments</div>
+            </div>
+          </div>
+        </div> */}
+        <div className="py-16 bg-[#ff9f1c] shadow-md">
+          <div className="text-6xl text-center pb-16 font-barlow-200 font-medium  uppercase tracking-tight ">
+            We Strive To Be
+          </div>
+          <div className="grid grid-cols-3 text-center  font-semibold">
+            <div className="col-span-1 text-2xl  ">
+              <div className="rounded-full shadow-xl bg-stone-50 w-1/2 mx-auto p-2">
+                Committed headluess ui menu
               </div>
             </div>
-            <div className="col-span-1 bg-green-400">
-              <h1 className="text-center">picture</h1>
-              <div className="py-4">
-                <p>Coaches jasdifjao;sdijf;asdjf;jasd;falksdh suck my dick</p>
+            <div className="col-span-1 text-2xl">
+              <div className="rounded-full shadow-xl bg-stone-50  w-1/2 mx-auto p-2 ">
+                Structured
+              </div>
+            </div>
+            <div className="col-span-1 text-2xl">
+              <div className="rounded-full shadow-xl bg-stone-50  w-1/2 mx-auto p-2 ">
+                Passionate
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-blue-100 py-8">
+        <div className=" py-8 mt-10 bg-stone-50 ">
+          <h1 className="text-center  tracking-tight text-6xl pb-6 font-medium font-barlow-200  uppercase  ">
+            Meet the Team
+          </h1>
+
+          <div className="lg:grid grid-cols-3 font-barlow">
+            <div className="col-span-1 bg-[#ff9f1c] py-8 mr-4 ml-16 rounded-xl shadow-lg">
+              <div className="text-center text-2xl font-medium">
+                Vishrant Prahbu
+              </div>
+              <div className="relative w-80 h-80 mx-auto  p-8">
+                <Image
+                  className=""
+                  src="/../public/Vish-1.jpg"
+                  alt="coach"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="py-4 text-center  text-xl font-medium ">
+                <p>Founder</p>
+                <p>Experience: MSJHS Varisity</p>
+                <p>Hometown: Fremont, CA</p>
+              </div>
+            </div>
+            <div className="col-span-1 bg-[#ff9f1c] py-8 mr-4 ml-16 rounded-xl shadow-lg">
+              <div className="text-center text-2xl">Dylan Nguyen</div>
+              <div className="relative w-80 h-80 mx-auto  p-8">
+                <Image
+                  className=""
+                  src="/../public/Vish-1.jpg"
+                  alt="coach"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="py-4 text-center  text-xl font-medium ">
+                <p>Founder</p>
+                <p>Experience: MSJHS Varisity</p>
+                <p>Hometown: Fremont, CA</p>
+              </div>
+            </div>
+            <div className="col-span-1 bg-[#ff9f1c] py-8  ml-4 mr-16 rounded-xl shadow-lg">
+              <div className="text-center text-2xl">Tejas Sathesh</div>
+              <div className="relative w-80 h-80 mx-auto ">
+                <Image
+                  className=""
+                  src="/../public/Vish-1.jpg"
+                  alt="coach"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="py-4 text-center  text-xl font-medium ">
+                <p>Teacher</p>
+                <p>Experience: MSJHS Varisity</p>
+                <p>Hometown: Fremont, CA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className=" py-8">
           <div>
-            <h1 className="text-center text-4xl tracking-wide pb-6">
-              Benefits
+            <h1 className="text-center text-6xl font-barlow-200 uppercase tracking-tight font-medium pb-6">
+              What We Focus On
             </h1>
+            <div className="grid grid-cols-3">
+              <div className="col-span-1 text-center">
+                <div className="text-4xl font-medium font-barlow">
+                  Dribbling
+                </div>
+                <ul className="list-disc">
+                  <li>Dribbling</li>
+                  <li>Shooting</li>
+                  <li>Finishing</li>
+                </ul>
+              </div>
+              <div className=" text-center col-span-1">
+                <div className="text-4xl font-medium font-barlow">Shooting</div>
+              </div>
+              <div className=" text-center col-span-1">
+                <div className="text-4xl font-medium font-barlow">
+                  Finishing
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="bg-blue-200 py-8">
-          <div className="">
-            <h1 className="text-center text-4xl pb-6">Location</h1>
+        <div className=" relative  h-99 bg-stone-100">
+          <Image
+            src="/../public/Vish-6.jpg"
+            layout="fill"
+            objectFit="cover"
+            alt="Gomes"
+            className="scale-x-flip "
+          ></Image>
+          <div className="absolute left-10 font-barlow text-4xl font-medium top-24 ">
+            All classes are held at{" "}
+          </div>
+          <div className="absolute left-10 top-40 font-barlow text-6xl uppercase font-medium">
+            John Gomes Elementary School
+          </div>
+        </div>
+        <div className="">
+          <div className="bg-stone-200 py-4 ">
+            <h2 className="text-5xl font-barlow text-center pb-8 ">
+              Hear What Parents Have to Say
+            </h2>
+            <div className="grid grid-cols-4 ">
+              <div className="cols-span-1 flex flex-col items-center justify-center">
+                <div className="text-center w-2/3 mx-auto">
+                  ya my child is 4'5 and through this program he is going to the
+                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
+                  ME
+                </div>
+                <div className="py-4"> -Parent Name</div>
+              </div>
+              <div className="cols-span-1 flex flex-col items-center justify-center">
+                <div className="text-center w-2/3 mx-auto">
+                  ya my child is 4'5 and through this program he is going to the
+                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
+                  ME
+                </div>
+                <div className="py-4"> -Parent Name</div>
+              </div>
+              <div className="cols-span-1 flex flex-col items-center justify-center">
+                <div className="text-center w-2/3 mx-auto">
+                  ya my child is 4'5 and through this program he is going to the
+                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
+                  ME
+                </div>
+                <div className="py-4"> -Parent Name</div>
+              </div>
+              <div className="cols-span-1 flex flex-col items-center justify-center">
+                <div className="text-center w-2/3 mx-auto">
+                  ya my child is 4'5 and through this program he is going to the
+                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
+                  ME
+                </div>
+                <div className="py-4"> -Parent Name</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-24">
+          <div className="grid grid-cols-2 w-3/5 mx-auto border-4 border-orange-300  py-8  ">
+            <div className="col-span-1 text-5xl font-barlow flex justify-center items-center">
+              Ready to Join?
+            </div>
+            <Link href="/register" passHref>
+              <div className="flex justify-center items-center ">
+                <button className="border-2 border-orange-300 hover:bg-[#ff9f1c] hover:border-none p-2 rounded-md font-barlow text-xl font-semibold tracking-wide">
+                  {" "}
+                  Register Now!
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       </main>

@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-6 lg:px-8">
         <div className="lg:grid grid-cols-12 py-8">
           <div className="relative col-span-4 w-48 h-24">
-            <Image src="/logoLight.png" layout="fill" />
+            <Image src="/logoLight.png" layout="fill" alt="logo" />
           </div>
 
           <div className="relative col-span-4 pt-8 lg:pt-0">

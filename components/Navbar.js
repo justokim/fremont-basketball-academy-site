@@ -9,7 +9,7 @@ const routes = [
 
 const Navbar = () => {
   return (
-    <div className="h-20 fixed w-full border-b bg-black text-white shadow-xl">
+    <div className="h-20 z-10 fixed w-full  bg-darkgray text-white shadow-2xl">
       <div className="max-w-screen-xl mx-auto">
         <div className="px-6 lg:px-8 flex items-center justify-between">
           <Link href="/">
