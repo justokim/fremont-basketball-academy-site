@@ -49,17 +49,17 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-3 text-center  font-semibold">
             <div className="col-span-1 text-2xl  ">
-              <div className="rounded-full shadow-xl bg-stone-50 w-1/2 mx-auto p-2">
-                Committed 
+              <div className="rounded-xl  bg-stone-50 w-1/2 mx-auto p-2">
+                Committed
               </div>
             </div>
             <div className="col-span-1 text-2xl">
-              <div className="rounded-full shadow-xl bg-stone-50  w-1/2 mx-auto p-2 ">
+              <div className="rounded-xl  bg-stone-50  w-1/2 mx-auto p-2 ">
                 Structured
               </div>
             </div>
             <div className="col-span-1 text-2xl">
-              <div className="rounded-full shadow-xl bg-stone-50  w-1/2 mx-auto p-2 ">
+              <div className="rounded-xl  bg-stone-50  w-1/2 mx-auto p-2 ">
                 Passionate
               </div>
             </div>
@@ -128,30 +128,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" py-8">
-          <div>
-            <h1 className="text-center text-6xl font-barlow-200 uppercase tracking-tight font-medium pb-6">
-              What We Focus On
-            </h1>
-            <div className="grid grid-cols-3">
-              <div className="col-span-1 text-center">
-                <div className="text-4xl font-medium font-barlow">
-                  Dribbling
-                </div>
-               
-              </div>
-              <div className=" text-center col-span-1">
-                <div className="text-4xl font-medium font-barlow">Shooting</div>
-              </div>
-              <div className=" text-center col-span-1">
-                <div className="text-4xl font-medium font-barlow">
-                  Finishing
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className=" relative  h-99 ">
           <Image
             src="/../public/Vish-6.jpg"
@@ -161,7 +137,7 @@ export default function Home() {
             className="scale-x-flip "
           ></Image>
           <div className="absolute left-10 font-barlow text-4xl font-medium top-24 ">
-            All classes are held at{" "}
+            All classes are held at
           </div>
           <div className="absolute left-10 top-40 font-barlow text-6xl uppercase font-medium">
             John Gomes Elementary School
@@ -172,36 +148,31 @@ export default function Home() {
             <h2 className="text-5xl font-barlow text-center pb-8 ">
               Hear What Parents Have to Say
             </h2>
-            <div className="grid grid-cols-4 ">
+            <div className="grid grid-cols-2 w-4/5 mx-auto">
               <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center w-2/3 mx-auto">
-                  Vishrant and Dillon have put together a great initiative to coach kids in basektball. They have been consisitent, organized, flexible, open to feedback, and have kept the sport fun for our 9 year old. Highly reccomend them for a grass-roots approach to learning the nuances of basketball in a small group.
+                <div className="text-center w-1/2 mx-auto">
+                  Vishrant and Dillon have put together a great initiative to
+                  coach kids in basektball. They have been consisitent,
+                  organized, flexible, open to feedback, and have kept the sport
+                  fun for our 9 year old. Highly reccomend them for a
+                  grass-roots approach to learning the nuances of basketball in
+                  a small group.
                 </div>
                 <div className="py-4"> -Nandini V</div>
               </div>
-              <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center w-2/3 mx-auto">
-                  ya my child is 4'5 and through this program he is going to the
-                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
-                  ME
+
+              <div className="grid grid-cols-1 ">
+                <div className="cols-span-1 flex flex-col items-center justify-center">
+                  <div className="text-center w-1/2 mx-auto">
+                    My daughter has been going to basketball classes with coach
+                    Vishranth and Dillon. It is a full 60 minutes non-stop
+                    workout and I have seen her skills improve every week. I
+                    have seen the amount of personal attention each kid gets
+                    from the coach. The competitive games at the end of the
+                    session helps the kids implement the learnings.
+                  </div>
+                  <div className="py-4"> -</div>
                 </div>
-                <div className="py-4"> -Parent Name</div>
-              </div>
-              <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center w-2/3 mx-auto">
-                  ya my child is 4'5 and through this program he is going to the
-                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
-                  ME
-                </div>
-                <div className="py-4"> -Parent Name</div>
-              </div>
-              <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center w-2/3 mx-auto">
-                  ya my child is 4'5 and through this program he is going to the
-                  WBNA YUR bish hella different tagues is ass sylan is eh YAFEEL
-                  ME
-                </div>
-                <div className="py-4"> -Parent Name</div>
               </div>
             </div>
           </div>
