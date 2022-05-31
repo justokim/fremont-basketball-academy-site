@@ -79,7 +79,7 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
-                  src="/../public/vish.PNG"
+                  src="/../public/vish.png"
                   alt="coach"
                   layout="fill"
                   objectFit="contain"

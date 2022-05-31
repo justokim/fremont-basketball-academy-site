@@ -43,7 +43,7 @@ const About = () => {
               {" "}
               <Image
                 alt="founder"
-                src="/../public/vish.PNG"
+                src="/../public/vish.png"
                 layout="fill"
                 objectFit="contain"
               ></Image>
