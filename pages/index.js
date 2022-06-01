@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import vish from "../public/vish.png";
 export default function Home() {
   return (
     <div className="w-full">
@@ -79,7 +79,7 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
-                  src="/../public/vish.png"
+                  src={vish}
                   alt="coach"
                   layout="fill"
                   objectFit="contain"
