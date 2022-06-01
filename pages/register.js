@@ -26,12 +26,12 @@ const Register = () => {
     e.preventDefault();
 
     const body = {
-      parentname: parentname,
+      parentName: parentname,
       email: email,
       childName: childname,
       age: age,
       grade: grade,
-      phonenumber: phonenumber,
+      phoneNumber: phonenumber,
     };
 
     try {
