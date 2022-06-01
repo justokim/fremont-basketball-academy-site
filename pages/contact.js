@@ -33,7 +33,7 @@ const Contact = () => {
         (result) => {
           Swal.fire({
             icon: "success",
-            title: "Message Sent Successfully",
+            title: "message Sent Successfully",
           });
 
           clearForm();
@@ -41,7 +41,7 @@ const Contact = () => {
         (error) => {
           Swal.fire({
             icon: "error",
-            title: "Oops, something went wrong",
+            title: " something went wrong",
             text: error.text,
           });
         }
