@@ -5,7 +5,7 @@ const About = () => {
     <div className="py-12 w-full">
       <div className="max-w-screen-xl mx-auto">
         <h1 className="text-5xl font-medium text-center">About Us</h1>
-        <div className="mt-6 grid grid-cols-2 gap-8 text-center ">
+        <div className="mt-6 grid grid-cols-1 mx-6 lg:grid lg:grid-cols-2 gap-8 text-center ">
           {" "}
           <div className="col-span-1 text-xl bg-stone-200 p-4 rounded-xl shadow-xl">
             Fremont Basketball Academy was established in June 2020. The goal of
@@ -23,7 +23,7 @@ const About = () => {
             developing better technique and skills in every aspect of the game.{" "}
           </div>
         </div>
-        <div className="w-1/2 text-center mx-auto mt-6 text-xl bg-stone-200 p-4 rounded-xl shadow-xl">
+        <div className="   mx-6 text-center grid grid-cols-1 mt-6 lg:w-1/2 lg:mx-auto text-xl bg-stone-200 p-2 rounded-xl shadow-xl">
           Vishrant Prabhu founded the academy in June 2020. With the tremendous
           growth in the academy, we now have 3 coaches who work with the
           children and plan on hiring more soon. All the coaches are motivated
@@ -34,7 +34,7 @@ const About = () => {
       </div>
       <div className="w-3/4 mx-auto my-6">
         <h6 className="text-center text-5xl font-medium">Meet the Founder</h6>
-        <div className="grid grid-cols-2 mt-6 place-items-center">
+        <div className=" grid grid-cols-1 gap-4 lg:grid lg:grid-cols-2 mt-6 place-items-center">
           <div className="col-span-1  ">
             <div
               className="relative w-80 h-80
@@ -60,7 +60,7 @@ const About = () => {
         </div>
       </div>
       <div className="pt-8 bg-stone-200 h-full">
-        <div className="w-3/4 mx-auto">
+        <div className=" px-10 pb-4 lg:w-3/4 lg:mx-auto">
           {" "}
           “I had a great coach and mentor growing up and wanted to motivate kids
           in a similar way. I played basketball throughout my childhood. The

@@ -43,23 +43,23 @@ export default function Home() {
             </div>
           </div>
         </div> */}
-        <div className="py-16 bg-[#ff9f1c] shadow-md">
-          <div className="text-6xl text-center pb-16 font-barlow-200 font-medium  uppercase tracking-tight ">
+        <div className=" py-16 bg-[#ff9f1c] shadow-md">
+          <div className=" text-5xl lg:text-6xl text-center pb-16 font-barlow-200 font-medium  uppercase tracking-tight ">
             We Strive To Be
           </div>
-          <div className="grid grid-cols-3 text-center  font-semibold">
+          <div className="  grid grid-cols-1 gap-8 lg:grid lg:grid-cols-3 text-center  font-semibold">
             <div className="col-span-1 text-2xl  ">
-              <div className="rounded-xl  bg-stone-50 w-1/2 mx-auto p-2">
+              <div className="rounded-xl bg-white  w-1/2 mx-auto p-2">
                 Committed
               </div>
             </div>
             <div className="col-span-1 text-2xl">
-              <div className="rounded-xl  bg-stone-50  w-1/2 mx-auto p-2 ">
+              <div className="rounded-xl  bg-white   w-1/2 mx-auto p-2 ">
                 Structured
               </div>
             </div>
             <div className="col-span-1 text-2xl">
-              <div className="rounded-xl  bg-stone-50  w-1/2 mx-auto p-2 ">
+              <div className="rounded-xl  bg-white   w-1/2 mx-auto p-2 ">
                 Passionate
               </div>
             </div>
@@ -71,8 +71,8 @@ export default function Home() {
             Meet the Team
           </h1>
 
-          <div className="lg:grid grid-cols-3 font-barlow">
-            <div className="col-span-1 bg-[#ff9f1c] py-8 mr-4 ml-16 rounded-xl shadow-lg">
+          <div className=" grid grid-cols-1 place-items-center place-content-center gap-8 lg:grid lg:grid-cols-3 font-barlow">
+            <div className="col-span-1 bg-[#ff9f1c] rounded-xl shadow-lg">
               <div className="text-center text-2xl font-medium">
                 Vishrant Prahbu
               </div>
@@ -91,8 +91,8 @@ export default function Home() {
                 <p>Hometown: Fremont, CA</p>
               </div>
             </div>
-            <div className="col-span-1 bg-[#ff9f1c] py-8 mr-4 ml-16 rounded-xl shadow-lg">
-              <div className="text-center text-2xl">Dylan Nguyen</div>
+            <div className="col-span-1 bg-[#ff9f1c] rounded-xl shadow-lg">
+              <div className="text-center text-2xl">Dillon Nguyen</div>
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
@@ -108,7 +108,7 @@ export default function Home() {
                 <p>Hometown: Fremont, CA</p>
               </div>
             </div>
-            <div className="col-span-1 bg-[#ff9f1c] py-8  ml-4 mr-16 rounded-xl shadow-lg">
+            <div className="col-span-1 bg-[#ff9f1c]  rounded-xl shadow-lg">
               <div className="text-center text-2xl">Tejas Sathesh</div>
               <div className="relative w-80 h-80 mx-auto ">
                 <Image
@@ -136,10 +136,10 @@ export default function Home() {
             alt="Gomes"
             className="scale-x-flip "
           ></Image>
-          <div className="absolute left-10 font-barlow text-4xl font-medium top-24 ">
+          <div className="absolute left-10 font-barlow  text-3xl lg:text-4xl font-medium top-24 ">
             All classes are held at
           </div>
-          <div className="absolute left-10 top-40 font-barlow text-6xl uppercase font-medium">
+          <div className="absolute left-10 top-40 font-barlow  text-5xl lg:text-6xl uppercase font-medium">
             John Gomes Elementary School
           </div>
         </div>
@@ -148,9 +148,9 @@ export default function Home() {
             <h2 className="text-5xl font-barlow text-center pb-8 ">
               Hear What Parents Have to Say
             </h2>
-            <div className="grid grid-cols-2 w-4/5 mx-auto">
+            <div className=" grid grid-cols-1 lg:grid lg:grid-cols-2 w-4/5 mx-auto">
               <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center w-1/2 mx-auto">
+                <div className="text-center lg:w-1/2 lg:mx-auto">
                   Vishrant and Dillon have put together a great initiative to
                   coach kids in basektball. They have been consisitent,
                   organized, flexible, open to feedback, and have kept the sport
@@ -163,7 +163,7 @@ export default function Home() {
 
               <div className="grid grid-cols-1 ">
                 <div className="cols-span-1 flex flex-col items-center justify-center">
-                  <div className="text-center w-1/2 mx-auto">
+                  <div className="text-center lg:w-1/2 lg:mx-auto">
                     My daughter has been going to basketball classes with coach
                     Vishranth and Dillon. It is a full 60 minutes non-stop
                     workout and I have seen her skills improve every week. I
@@ -178,13 +178,13 @@ export default function Home() {
           </div>
         </div>
         <div className="py-24">
-          <div className="grid grid-cols-2 w-3/5 mx-auto border-4 border-orange-300  py-8  ">
-            <div className="col-span-1 text-5xl font-barlow flex justify-center items-center">
+          <div className=" grid grid-cols-1 lg:grid lg:grid-cols-2 lg:w-3/5 lg:mx-auto lg:border-4  border-orange-300  py-8  ">
+            <div className=" hidden lg:col-span-1 lg:text-5xl lg:font-barlow lg:flex lg:justify-center lg:items-center">
               Ready to Join?
             </div>
             <Link href="/register" passHref>
               <div className="flex justify-center items-center ">
-                <button className="border-2 border-orange-300 hover:bg-[#ff9f1c] hover:border-none p-2 rounded-md font-barlow text-xl font-semibold tracking-wide">
+                <button className="border-2 border-orange-300 hover:bg-[#ff9f1c] hover:border-none lg:p-2 p-4 rounded-md font-barlow text-xl font-semibold tracking-wide">
                   {" "}
                   Register Now!
                 </button>

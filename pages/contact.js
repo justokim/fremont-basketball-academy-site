@@ -1,27 +1,53 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
+  const KEY = process.env.NEXT_PUBLIC_API_KEY;
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [name, setName] = useState("");
 
-  const [errMsg, setErrMsg] = useState("");
+  const clearForm = () => {
+    setMessage("");
+    setName("");
+    setSubject("");
+    setEmail("");
+  };
 
-  const sendMessage = (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
-    if (errMsg) setErrMsg("");
 
-    if (email.length == 0 || !email.includes("@")) {
-      setErrMsg("You must provide a valid email!");
-      return;
-    }
-    if (subject.length == 0) {
-      setErrMsg("You must provide a subject!");
-      return;
-    }
-    if (subject.message == 0) {
-      setErrMsg("You must provide a message!");
-      return;
+    const body = {
+      name: name,
+      email: email,
+      message: message,
+      subject: subject,
+    };
+
+    try {
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, body, KEY).then(
+        (result) => {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent Successfully",
+          });
+
+          clearForm();
+        },
+        (error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops, something went wrong",
+            text: error.text,
+          });
+        }
+      );
+    } catch (err) {
+      console.error(err);
     }
   };
 
@@ -30,18 +56,16 @@ const Contact = () => {
       <div className="max-w-5xl mx-auto bg-gray-100 p-4 rounded">
         <h1 className="text-5xl pb-4 text-center">Contact Us</h1>
 
-        <div className="pb-6 grid grid-cols-12">
-          <div className="col-span-6 text-center">
-            <h2 className="text-2xl font-thin tracking-wide">Email</h2>
-            <p>vishrantprabhu6@gmail.com</p>
+        <form onSubmit={submitForm} className="space-y-6">
+          <div className="flex flex-col">
+            <label className="text-lg pb-0.5">Name</label>
+            <input
+              className="bg-gray-200 outline-none p-1 rounded px-2"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
-          <div className="col-span-6 text-center">
-            <h2 className="text-2xl font-thin tracking-wide">Phone</h2>
-            <p>(510) 737-9131</p>
-          </div>
-        </div>
 
-        <form onSubmit={sendMessage} className="space-y-6">
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Email</label>
             <input
@@ -71,7 +95,7 @@ const Contact = () => {
           </div>
 
           <div className="flex justify-between items-center">
-            <div className="text-red-500 text-lg">*{errMsg}</div>
+            {/* <div className="text-red-500 text-lg">*{errMsg}</div> */}
             <button
               type="submit"
               className="outline-none bg-[#ff9f1c] text-white px-4 py-2 rounded"

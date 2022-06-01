@@ -1,27 +1,59 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
 
 const Register = () => {
+  const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_REGISTER_TEMPLATE_ID;
+  const KEY = process.env.NEXT_PUBLIC_API_KEY;
   const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
 
-  const [errMsg, setErrMsg] = useState("");
+  const [childname, setChildname] = useState("");
+  const [parentname, setParentname] = useState("");
+  const [age, setAge] = useState("");
+  const [phonenumber, setPhonenumber] = useState("");
+  const [grade, setGrade] = useState("");
+  const clearForm = () => {
+    setAge("");
+    setChildname("");
+    setParentname("");
+    setEmail("");
+    setGrade("");
+    setPhonenumber("");
+  };
 
-  const sendMessage = (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
-    if (errMsg) setErrMsg("");
 
-    if (email.length == 0 || !email.includes("@")) {
-      setErrMsg("You must provide a valid email!");
-      return;
-    }
-    if (subject.length == 0) {
-      setErrMsg("You must provide a subject!");
-      return;
-    }
-    if (subject.message == 0) {
-      setErrMsg("You must provide a message!");
-      return;
+    const body = {
+      parentname: parentname,
+      email: email,
+      childName: childname,
+      age: age,
+      grade: grade,
+      phonenumber: phonenumber,
+    };
+
+    try {
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, body, KEY).then(
+        (result) => {
+          Swal.fire({
+            icon: "success",
+            title: "Message Sent Successfully",
+          });
+
+          clearForm();
+        },
+        (error) => {
+          Swal.fire({
+            icon: "error",
+            title: "Oops, something went wrong",
+            text: error.text,
+          });
+        }
+      );
+    } catch (err) {
+      console.error(err);
     }
   };
 
@@ -30,37 +62,46 @@ const Register = () => {
       <div className="max-w-5xl mx-auto bg-gray-100 p-4 rounded">
         <h1 className="text-5xl pb-4 text-center">Register</h1>
 
-        <form onSubmit={sendMessage} className="space-y-6">
+        <form onSubmit={submitForm} className="space-y-6">
           <div className="flex flex-col">
-            <label className="text-lg pb-0.5">Parent Name</label>
+            <label className="text-lg pb-0.5">Email</label>
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="flex flex-col">
+            <label className="text-lg pb-0.5">Parent Name</label>
+            <input
+              className="bg-gray-200 outline-none p-1 rounded px-2"
+              value={parentname}
+              onChange={(e) => setParentname(e.target.value)}
             />
           </div>
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Child Name</label>
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={childname}
+              onChange={(e) => setChildname(e.target.value)}
             />
           </div>
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Age</label>
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={age}
+              onChange={(e) => setAge(e.target.value)}
             />
           </div>
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Grade</label>
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={grade}
+              placeholder="4th grade"
+              onChange={(e) => setGrade(e.target.value)}
             />
           </div>
 
@@ -68,13 +109,13 @@ const Register = () => {
             <label className="text-lg pb-0.5">Phone Number</label>
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              value={phonenumber}
+              placeholder="xxx-xxx-xxxx"
+              onChange={(e) => setPhonenumber(e.target.value)}
             />
           </div>
 
           <div className="flex justify-between items-center">
-            <div className="text-red-500 text-lg">*{errMsg}</div>
             <button
               type="submit"
               className="outline-none bg-[#ff9f1c] text-white px-4 py-2 rounded"
