@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import vish from "../public/vish.png";
+
 export default function Home() {
   return (
     <div className="w-full">
@@ -79,7 +79,7 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
-                  src={vish}
+                  src="/vish.png"
                   alt="coach"
                   layout="fill"
                   objectFit="contain"
@@ -96,7 +96,7 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto  p-8">
                 <Image
                   className=""
-                  src="/../public/Vish-1.jpg"
+                  src="/Vish-1.jpg"
                   alt="coach"
                   layout="fill"
                   objectFit="contain"
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="relative w-80 h-80 mx-auto ">
                 <Image
                   className=""
-                  src="/../public/tej.jpg"
+                  src="/tej.jpg"
                   alt="coach"
                   layout="fill"
                   objectFit="contain"
@@ -130,7 +130,7 @@ export default function Home() {
 
         <div className=" relative  h-99 ">
           <Image
-            src="/../public/Vish-6.jpg"
+            src="/Vish-6.jpg"
             layout="fill"
             objectFit="cover"
             alt="Gomes"
