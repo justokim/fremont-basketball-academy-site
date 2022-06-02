@@ -86,7 +86,7 @@ export default function Home() {
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
-                <p>Founder</p>
+                <p>Founder/Coach</p>
                 <p>Experience: MSJHS Varisity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
@@ -103,7 +103,7 @@ export default function Home() {
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
-                <p>Teacher</p>
+                <p>Coach</p>
                 <p>Experience: MSJHS Varisity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
@@ -120,7 +120,7 @@ export default function Home() {
                 />
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
-                <p>Teacher</p>
+                <p>Coach</p>
                 <p>Experience: MSJHS Varisity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
@@ -148,9 +148,9 @@ export default function Home() {
             <h2 className="text-5xl font-barlow text-center pb-8 ">
               Hear What Parents Have to Say
             </h2>
-            <div className=" grid grid-cols-1 lg:grid lg:grid-cols-2 w-4/5 mx-auto">
+            <div className=" grid grid-cols-1 lg:grid lg:grid-cols-3 gap-8 px-8 text-lg ">
               <div className="cols-span-1 flex flex-col items-center justify-center">
-                <div className="text-center lg:w-1/2 lg:mx-auto">
+                <div className="text-center   ">
                   Vishrant and Dillon have put together a great initiative to
                   coach kids in basektball. They have been consisitent,
                   organized, flexible, open to feedback, and have kept the sport
@@ -163,15 +163,26 @@ export default function Home() {
 
               <div className="grid grid-cols-1 ">
                 <div className="cols-span-1 flex flex-col items-center justify-center">
-                  <div className="text-center lg:w-1/2 lg:mx-auto">
+                  <div className="text-center ">
                     My daughter has been going to basketball classes with coach
-                    Vishranth and Dillon. It is a full 60 minutes non-stop
+                    Vishrant and Dillon. It is a full 60 minutes non-stop
                     workout and I have seen her skills improve every week. I
                     have seen the amount of personal attention each kid gets
                     from the coach. The competitive games at the end of the
                     session helps the kids implement the learnings.
                   </div>
-                  <div className="py-4"> -</div>
+                  <div className="py-4"> -Anitha H</div>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 pt-10">
+                <div className="cols-span-1 flex flex-col items-center justify-center">
+                  <div className="text-center ">
+                    Vishrant and Dillon have coached my kids for the past year.
+                    They are extremely good with little kids, keeping them
+                    engaged and making the game fun while pushing them to do
+                    better.
+                  </div>
+                  <div className="py-4"> -Alpana K</div>
                 </div>
               </div>
             </div>
