@@ -71,6 +71,8 @@ const Contact = () => {
             <input
               className="bg-gray-200 outline-none p-1 rounded px-2"
               value={email}
+              type="email"
+              required
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>

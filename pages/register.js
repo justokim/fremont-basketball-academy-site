@@ -66,6 +66,8 @@ const Register = () => {
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Email</label>
             <input
+              type="email"
+              required
               className="bg-gray-200 outline-none p-1 rounded px-2"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -108,10 +110,14 @@ const Register = () => {
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Phone Number</label>
             <input
+              input="tel"
+              id="phone"
+              name="phone"
               className="bg-gray-200 outline-none p-1 rounded px-2"
               value={phonenumber}
               placeholder="xxx-xxx-xxxx"
               onChange={(e) => setPhonenumber(e.target.value)}
+              pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
             />
           </div>
 
