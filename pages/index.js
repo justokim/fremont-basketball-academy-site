@@ -87,7 +87,7 @@ export default function Home() {
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
                 <p>Founder/Coach</p>
-                <p>Experience: MSJHS Varisity</p>
+                <p>Experience: MSJHS Varsity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
             </div>
@@ -104,7 +104,7 @@ export default function Home() {
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
                 <p>Coach</p>
-                <p>Experience: MSJHS Varisity</p>
+                <p>Experience: MSJHS Varsity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
             </div>
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
               <div className="py-4 text-center  text-xl font-medium ">
                 <p>Coach</p>
-                <p>Experience: MSJHS Varisity</p>
+                <p>Experience: MSJHS Varsity</p>
                 <p>Hometown: Fremont, CA</p>
               </div>
             </div>
