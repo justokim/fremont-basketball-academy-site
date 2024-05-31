@@ -117,7 +117,7 @@ const Register = () => {
               value={phonenumber}
               placeholder="xxx-xxx-xxxx"
               onChange={(e) => setPhonenumber(e.target.value)}
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             />
           </div>
 
