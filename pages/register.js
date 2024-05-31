@@ -110,7 +110,7 @@ const Register = () => {
           <div className="flex flex-col">
             <label className="text-lg pb-0.5">Phone Number</label>
             <input
-              input="tel"
+              // input="tel"
               id="phone"
               name="phone"
               className="bg-gray-200 outline-none p-1 rounded px-2"
